@@ -1,0 +1,44 @@
+<h3>Nuevo Socio</h3>
+<div class="mb-3">
+    <label for="nombreInput" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombreInput" placeholder="Ingrese su nombre" #inputNombre>
+</div>
+<div class="mb-3">
+    <label for="apellidosInput" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="apellidosInput" placeholder="Ingrese sus apellidos" #inputApellidos>
+</div>
+<div class="mb-3">
+    <label for="dniInput" class="form-label">DNI</label>
+    <input type="text" class="form-control" id="dniInput" placeholder="Ingrese su DNI" #inputDni>
+</div>
+<div class="mb-3">
+    <label for="sexoInput" class="form-label">Sexo</label>
+    <input type="text" class="form-control" id="sexoInput" placeholder="Ingrese su sexo" #inputSexo>
+</div>
+<div class="mb-3">
+    <label for="ocupacionInput" class="form-label">Ocupacion</label>
+    <input type="text" class="form-control" id="ocupacionInput" placeholder="Ingrese su ocupacion" #inputOcupacion>
+</div>
+<div class="mb-3">
+    <label for="fechanacInput" class="form-label">Fecha de Nacimiento</label>
+    <input type="string" class="form-control" id="fechanacInput" placeholder="Ingrese su fecha de nacimiento" #inputFechanac>
+</div>
+<div class="mb-3">
+    <label for="correoInput" class="form-label">Correo</label>
+    <input type="text" class="form-control" id="correoInput" placeholder="Ingrese su correo" #inputCorreo>
+</div>
+<div class="mb-3">
+    <label for="celularInput" class="form-label">Celular</label>
+    <input type="text" class="form-control" id="celularInput" placeholder="Ingrese su numero de celular" #inputCelular>
+</div>
+<div class="mb-3">
+    <label for="loginInput" class="form-label">Login</label>
+    <input type="text" class="form-control" id="loginInput" placeholder="Ingrese su usuario" #inputLogin>
+</div>
+<div class="mb-3">
+    <label for="contrasenaInput" class="form-label">Contrasena</label>
+    <input type="password" class="form-control" id="contrasenaInput" #inputContrasena>
+</div>
+<hr>
+
+<a href="socio" class="btn btn-primary btn-lg" tabindex="-1" role="button" (click)="crearSocio(inputNombre.value, inputApellidos.value, inputDni.value, inputSexo.value, inputOcupacion.value, inputFechanac.value, inputCorreo.value, inputCelular.value, inputLogin.value, inputContrasena.value)">Aceptar</a>

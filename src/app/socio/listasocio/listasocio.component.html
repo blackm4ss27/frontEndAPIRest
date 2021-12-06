@@ -1,0 +1,33 @@
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">APELLIDOS</th>
+        <th scope="col">DNI</th>
+        <th scope="col">SEXO</th>
+        <th scope="col">OCUPACION</th>
+        <th scope="col">FECHA NAC.</th>
+        <th scope="col">CORREO</th>
+        <th scope="col">CELULAR</th>
+        <th scope="col">LOGIN</th>
+        <th scope="col">CONTRASENA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let socio of lista">
+        <th scope="row">{{ socio.id }}</th>
+        <td>{{ socio.nomSocio }}</td>
+        <td>{{ socio.apSocio }}</td>
+        <td>{{ socio.dni }}</td>
+        <td>{{ socio.sexo }}</td>
+        <td>{{ socio.ocupacion }}</td>
+        <td>{{ socio.fechaNac }}</td>
+        <td>{{ socio.correo }}</td>
+        <td>{{ socio.celular }}</td>
+        <td>{{ socio.login }}</td>
+        <td>{{ socio.contrasena }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="socio/nuevo" class="btn btn-primary btn-lg" tabindex="-1" role="button" >Registrar</a>
