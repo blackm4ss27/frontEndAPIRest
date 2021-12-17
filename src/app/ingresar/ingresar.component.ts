@@ -17,3 +17,5 @@ export class IngresarComponent implements OnInit{
         return this.ingresarService
     }
 }
+
+//inputLogin: string, inputPassword: string
