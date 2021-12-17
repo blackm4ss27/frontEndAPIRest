@@ -1,4 +1,3 @@
-<!-- <p>desde blaaaaaaaaaaaank</p> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -38,3 +37,26 @@
       </div>
     </div>
   </nav>
+  <p></p>
+  <p></p>
+  <p></p>
+  <table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">TIPO</th>
+          <th scope="col">MONTO</th>
+          <th scope="col">FEC. EMISION</th>
+          <th scope="col">TASA INT.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prestamo of lista">
+          <th scope="row">{{ prestamo.id }}</th>
+          <td>{{ prestamo.tipoPrestamo }}</td>
+          <td>{{ prestamo.montoPrestamo }}</td>
+          <td>{{ prestamo.fecEmision }}</td>
+          <td>{{ prestamo.tasaInteres }}</td>
+        </tr>
+    </tbody>
+</table>

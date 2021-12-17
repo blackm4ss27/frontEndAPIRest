@@ -7,6 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { SocioModule } from './socio/socio.module';
+import { CuentaModule } from './cuenta/cuenta.module';
+import { MovimientoModule } from './movimiento/movimiento.module';
+import { PrestamoModule } from './prestamo/prestamo.module';
+import { IngresarModule } from './ingresar/ingresar.module';
+import { EspacioModule } from './espacio/espacio.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { SocioModule } from './socio/socio.module';
     HttpClientModule,
     FormsModule,
     SharedModule,
-    SocioModule
+    SocioModule,
+    CuentaModule,
+    MovimientoModule,
+    PrestamoModule,
+    IngresarModule,
+    EspacioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

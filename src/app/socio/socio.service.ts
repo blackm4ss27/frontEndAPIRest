@@ -21,4 +21,8 @@ export class SocioService {
   agregarSocio(socio: Socio){
     this.http.post<any>('http://127.0.0.1:8080/api/socio', socio).subscribe();
   }
+
+  eliminarSocio(id: number){
+    this.http.delete<Socio[]>('http://127.0.0.1:8080/api/socio/{id}').subscribe();
+  }
 }

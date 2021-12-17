@@ -1,4 +1,3 @@
-<!-- <p>desde blaaaaaaaaaaaank</p> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -38,3 +37,28 @@
       </div>
     </div>
   </nav>
+  <p></p>
+  <p></p>
+  <p></p>
+  <table class="table table-hover">
+      <thead class="table-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Fecha de Apertura</th>
+            <th scope="col">Nro Cuenta</th>
+            <th scope="col">Saldo</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Id Propietario</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let cuenta of lista">
+            <th scope="row">{{ cuenta.id }}</th>
+            <td>{{ cuenta.fechaApertura }}</td>
+            <td>{{ cuenta.nroCuenta }}</td>
+            <td>{{ cuenta.saldo }}</td>
+            <td>{{ cuenta.tipoCuenta }}</td>
+            <td>{{ cuenta.perteneceSocio }}</td>
+          </tr>
+      </tbody>
+  </table>

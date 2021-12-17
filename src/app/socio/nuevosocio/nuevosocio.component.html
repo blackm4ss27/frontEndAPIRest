@@ -1,44 +1,179 @@
-<h3>Nuevo Socio</h3>
-<div class="mb-3">
-    <label for="nombreInput" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="nombreInput" placeholder="Ingrese su nombre" #inputNombre>
-</div>
-<div class="mb-3">
-    <label for="apellidosInput" class="form-label">Apellidos</label>
-    <input type="text" class="form-control" id="apellidosInput" placeholder="Ingrese sus apellidos" #inputApellidos>
-</div>
-<div class="mb-3">
-    <label for="dniInput" class="form-label">DNI</label>
-    <input type="text" class="form-control" id="dniInput" placeholder="Ingrese su DNI" #inputDni>
-</div>
-<div class="mb-3">
-    <label for="sexoInput" class="form-label">Sexo</label>
-    <input type="text" class="form-control" id="sexoInput" placeholder="Ingrese su sexo" #inputSexo>
-</div>
-<div class="mb-3">
-    <label for="ocupacionInput" class="form-label">Ocupacion</label>
-    <input type="text" class="form-control" id="ocupacionInput" placeholder="Ingrese su ocupacion" #inputOcupacion>
-</div>
-<div class="mb-3">
-    <label for="fechanacInput" class="form-label">Fecha de Nacimiento</label>
-    <input type="string" class="form-control" id="fechanacInput" placeholder="Ingrese su fecha de nacimiento" #inputFechanac>
-</div>
-<div class="mb-3">
-    <label for="correoInput" class="form-label">Correo</label>
-    <input type="text" class="form-control" id="correoInput" placeholder="Ingrese su correo" #inputCorreo>
-</div>
-<div class="mb-3">
-    <label for="celularInput" class="form-label">Celular</label>
-    <input type="text" class="form-control" id="celularInput" placeholder="Ingrese su numero de celular" #inputCelular>
-</div>
-<div class="mb-3">
-    <label for="loginInput" class="form-label">Login</label>
-    <input type="text" class="form-control" id="loginInput" placeholder="Ingrese su usuario" #inputLogin>
-</div>
-<div class="mb-3">
-    <label for="contrasenaInput" class="form-label">Contrasena</label>
-    <input type="password" class="form-control" id="contrasenaInput" #inputContrasena>
-</div>
-<hr>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="ingresar">Ingresar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<section class="vh-50 gradient-custom">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-9">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registrate y hazte socio de CREDIMAX!</h3>
+            <form>
 
-<a href="socio" class="btn btn-primary btn-lg" tabindex="-1" role="button" (click)="crearSocio(inputNombre.value, inputApellidos.value, inputDni.value, inputSexo.value, inputOcupacion.value, inputFechanac.value, inputCorreo.value, inputCelular.value, inputLogin.value, inputContrasena.value)">Aceptar</a>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="nombreInput" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombreInput" placeholder="Ingrese sus nombres" #inputNombre>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="apellidosInput" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidosInput" placeholder="Ingrese sus apellidos" #inputApellidos>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="dniInput" class="form-label">Nro de DNI</label>
+                    <input type="text" class="form-control" id="dniInput" placeholder="Ingrese su Nro de DNI" #inputDni>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <!-- <div class="form-outline">
+                    <label for="sexoInput" class="form-label">Sexo</label>
+                    <input type="text" class="form-control" id="sexoInput" placeholder="Ingrese 'M' o 'F'" />
+                  </div> -->
+                  <label for="sexoInput" class="form-label">Sexo</label>
+                  <p></p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sexomInput" value="M" #inputSexo>
+                    <label class="form-check-label" for="sexomInput">Masculino</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sexofInput" value="F" #inputSexo>
+                    <label class="form-check-label" for="sexofInput">Femenino</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="ocupacionInput" class="form-label">Ocupacion</label>
+                    <input type="text" class="form-control" id="ocupacionInput" placeholder="Ingrese su Ocupacion" #inputOcupacion>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="fechanacInput" class="form-label">Fecha de Nacimiento</label>
+                    <input type="text" class="form-control" id="fechanacInput" placeholder="Ingrese su fecha de Nacimiento" #inputFechanac>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="correoInput" class="form-label">Correo Electronico</label>
+                    <input type="text" class="form-control" id="correoInput" placeholder="Ingrese su Correo Electronico" #inputCorreo>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="celularInput" class="form-label">Nro de Celular</label>
+                    <input type="text" class="form-control" id="celularInput" placeholder="Ingrese su Nro de Celular" #inputCelular>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="usuarioInput" class="form-label">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="usuarioInput" placeholder="Ingrese su Nombre de Usuario" #inputUsuario>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="contrasenaInput" class="form-label">Contrasena</label>
+                    <input type="password" class="form-control" id="contrasenaInput" placeholder="Ingrese su Contrasena" #inputContrasena>
+                  </div>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <a href="ingresar" class="btn btn-outline-success btn-lg" tabindex="-1" role="button" (click)="crearSocio(inputNombre.value, inputApellidos.value, inputDni.value, inputSexo.value, inputOcupacion.value, inputFechanac.value, inputCorreo.value, inputCelular.value, inputUsuario.value, inputContrasena.value)">Registrar</a>
+                    <!-- <button type="button" class="btn btn-outline-success btn-lg">Registrar</button> -->
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <a href="ingresar" class="btn btn-outline-danger btn-lg">Cancelar</a>
+                    <!-- <button type="button" class="btn btn-outline-danger btn-lg">Cancelar</button> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row">
+                <div class="col-12">
+
+                  <select class="select form-control-lg">
+                    <option value="1" disabled>Choose option</option>
+                    <option value="2">Subject 1</option>
+                    <option value="3">Subject 2</option>
+                    <option value="4">Subject 3</option>
+                  </select>
+                  <label class="form-label select-label">Choose option</label>
+
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

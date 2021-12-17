@@ -1,3 +1,5 @@
+import { Cuenta } from './cuenta.interface';
+
 export interface Socio {
     id:                number;
     nomSocio:          string;
@@ -10,6 +12,6 @@ export interface Socio {
     celular:           string;
     login:             string;
     contrasena:        string;
-    // tieneCuenta:       any[];
+    //tieneCuenta:       any[];
     // solicitaPrestamos: any[];
 }
